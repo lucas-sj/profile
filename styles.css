@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.conteudo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #F0F0F0;
+    border: solid 1px #8f8f8f;
+    justify-content: space-between;
+}
+.principal{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.imagem-perfil {
+    display: inline-block;
+    position: relative;
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.perfil-img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute; /* Define a posição absoluta para sobrepor as imagens */
+}
+
+.perfil-2 {
+    transform: rotateY(180deg); /* Inicialmente, a segunda imagem está virada */
+    opacity: 0; /* Inicialmente, a segunda imagem está oculta */
+}
+
+.imagem-perfil:hover .perfil-1 {
+    transform: rotateY(180deg); /* Gira a primeira imagem 180 graus */
+    opacity: 0; /* Oculta a primeira imagem no hover */
+}
+
+.imagem-perfil:hover .perfil-2 {
+    transform: rotateY(0deg); /* Gira a segunda imagem 180 graus de volta */
+    opacity: 1; /* Mostra a segunda imagem no hover */
+}
+
+.info-principal{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 80%;
+}
+.info-principal #profissional{
+    font-size: 18px;
+}
+
+.tecnologias{
+    margin-top: 15px;
+    width: 100%;
+}
+.tecnologias h1{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    
+}
+.img_tecnologias{
+    justify-content: space-around;
+    display: flex;
+}
+ion-icon{
+    width: 50px;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: black /* Defina a cor desejada para links visitados */
+}
+
