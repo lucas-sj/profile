@@ -30,22 +30,22 @@
     max-width: 100%;
     height: auto;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    position: absolute; /* Define a posição absoluta para sobrepor as imagens */
+    position: absolute;
 }
 
 .perfil-2 {
-    transform: rotateY(180deg); /* Inicialmente, a segunda imagem está virada */
-    opacity: 0; /* Inicialmente, a segunda imagem está oculta */
+    transform: rotateY(180deg);
+    opacity: 0; 
 }
 
 .imagem-perfil:hover .perfil-1 {
-    transform: rotateY(180deg); /* Gira a primeira imagem 180 graus */
-    opacity: 0; /* Oculta a primeira imagem no hover */
+    transform: rotateY(180deg);
+    opacity: 0; 
 }
 
 .imagem-perfil:hover .perfil-2 {
-    transform: rotateY(0deg); /* Gira a segunda imagem 180 graus de volta */
-    opacity: 1; /* Mostra a segunda imagem no hover */
+    transform: rotateY(0deg); 
+    opacity: 1; 
 }
 
 .info-principal{
@@ -80,6 +80,6 @@ a{
     text-decoration: none;
 }
 a:visited {
-    color: black /* Defina a cor desejada para links visitados */
+    color: black 
 }
 
